@@ -1,2 +1,22 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+namespace TicTacToe
+{
+    class Program
+    {
+        static void CreateEmptyBoard()
+        {
+            Char[] board = new char[10];
+            for (int i = 0; i < 10; i++)
+            {
+                board[i] = ' ';
+            }
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Welcome to Tic Tac Toe Game");
+            CreateEmptyBoard();
+
+        }
+    }
+}
